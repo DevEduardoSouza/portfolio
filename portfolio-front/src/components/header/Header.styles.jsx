@@ -16,8 +16,16 @@ export const StyleHeader = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+`;
 
-  position: relative;
+export const Fade = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 `;
 
 export const Profile = styled.div`
@@ -57,7 +65,6 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  padding: ${(props) => props.theme.spacing.medium};
   border-radius: ${(props) => props.theme.border.borderRadiusSmall};
   cursor: pointer;
 
@@ -73,11 +80,9 @@ export const Item = styled.li`
 
   a {
     display: block;
-    width: 100%;
-    height: 100%;
-
     font-size: 1rem;
     font-weight: bold;
+    padding: ${(props) => props.theme.spacing.medium};
 
     &:active {
       color: ${(props) => props.theme.colors.primary};
@@ -106,6 +111,4 @@ export const SocialMedia = styled.div`
       color: ${(props) => props.theme.colors.primary};
     }
   }
-
-
 `;
