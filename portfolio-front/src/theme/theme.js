@@ -9,6 +9,7 @@ const theme = {
     dark: "#16161a",
     darkBG: "#202024",
     white: "#fff",
+    fontSecondary: "#D6D6D6"
   },
   typography: {
     primary: "'Lato', sans-serif",
@@ -44,8 +45,8 @@ const theme = {
     duration: "0.3s",
     easing: "ease-in-out",
   },
-  border:{
-    borderGray : "1px solid #79797913",
+  border: {
+    borderGray: "1px solid #79797913",
     borderRadiusSmall: "8px",
     borderRadiusLarge: "12px",
     borderRadiusRound: "50%",
@@ -57,7 +58,13 @@ const theme = {
     Instagram: "https://www.instagram.com/seuusuario",
     LinkedIn: "https://www.linkedin.com/in/seuusuario",
     Discord: "https://www.discord.com/in/seuusuario",
-  }
+  },
+  user: {
+    name: "Eduardo Souza",
+    job: "Desenvolvedor Front-End",
+    description:
+      "Proficiente em JavaScript, React e TypeScript, dedicado a criar soluções inovadoras e escaláveis no front-end. Comprometido em aprimorar constantemente minhas habilidades e contribuir para projetos desafiadores. Uso o Git e o GitHub para compartilhar meu trabalho com a comunidade.",
+  },
 };
 
 export default theme;
