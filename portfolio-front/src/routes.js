@@ -7,12 +7,14 @@ import { Projects } from "./pages/projects/Projects.jsx";
 import {Cv} from "./pages/CV/Cv.jsx";
 import {Contact} from "./pages/contact/Contact.jsx";
 
+import { data } from "./data/data.js";
+
 export const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/projetos" element={<Projects />}></Route>
+        <Route path="/" element={<Home data={data}/>}></Route>
+        <Route path="/projetos" element={<Projects data={data}/>}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/curriculo" element={<Cv />}></Route>
         <Route path="/contatos" element={<Contact />}></Route>

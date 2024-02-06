@@ -10,6 +10,14 @@ export const Skills = styled.div`
   margin: 1rem 0;
 
   svg {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0%.5rem;
+    transition: ${(props) => props.theme.transitions.duration};
+
+    &:hover {
+      background-color: #494949;
+      border-radius: 0.2rem;
+    }
   }
 `;

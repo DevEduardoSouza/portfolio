@@ -4,6 +4,7 @@ import theme from "./theme/theme";
 import GlobalStyles from "./styles/GlobalStyles";
 import { AppRoutes } from "./routes";
 
+
 function App() {
   return (
     <div>

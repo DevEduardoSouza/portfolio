@@ -5,7 +5,14 @@ export const StyledWrapper = styled.section`
   flex-direction: column;
   justify-content: space-between;
 
-  max-width: ${(props) => props.theme.breakpoints.lg};
-  width: 90%;
-  margin: 0 auto;
+  max-width: ${(props) => props.theme.breakpoints.sm};
+  margin: auto;
+  padding: 1rem;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+    max-width: ${(props) => props.theme.breakpoints.md};
+    width: 95%;
+    margin: auto;
+    padding: 0;
+  }
 `;

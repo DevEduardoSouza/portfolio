@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyleHeader = styled.header`
+  width: 300px;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,13 +12,10 @@ export const StyleHeader = styled.header`
   padding: ${(props) => props.theme.spacing.medium};
   background-color: ${(props) => props.theme.colors.darkBG};
 
-  width: 23%;
-  min-width: 300px;
-  height: 100vh;
-
   position: fixed;
   top: 0;
   left: 0;
+
 `;
 
 export const Fade = styled.div`
@@ -110,5 +110,21 @@ export const SocialMedia = styled.div`
     &:hover {
       color: ${(props) => props.theme.colors.primary};
     }
+  }
+`;
+
+export const HeaderMobile = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  margin-bottom: 4rem;
+
+  span {
+    margin: auto;
+  }
+
+  svg {
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 `;

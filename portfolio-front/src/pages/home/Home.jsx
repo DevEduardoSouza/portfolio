@@ -14,59 +14,84 @@ import {
   SiStyledcomponents,
 } from "react-icons/si";
 import { Card } from "../../components/Card/Card.jsx";
-import { data } from "../../data/data.js";
+import { Footer } from "../../components/Footer/Footer.jsx";
+import { Container } from "../../components/Container/Container.styles.jsx";
 
-export const Home = () => {
+export const Home = ({ data }) => {
   return (
     <>
       <Header />
-      <Wrapper>
-        <Section>
-          <Paragraph>Olá 👋</Paragraph>
-          <Title fontSize="2.8rem">Eu sou {theme.user.name}</Title>
-          <span
-            style={{
-              fontSize: "1.2rem",
-              marginBottom: ".5rem",
-              display: "block",
-            }}
-          >
-            {theme.user.job}
-          </span>
-          <Paragraph>{theme.user.description}</Paragraph>
-        </Section>
+      <Container>
+        <Wrapper>
+          <Section>
+            <Paragraph>Olá 👋</Paragraph>
+            <Title fontSize="2.8rem">Eu sou {theme.user.name}</Title>
+            <span
+              style={{
+                fontSize: "1.2rem",
+                marginBottom: ".5rem",
+                display: "block",
+              }}
+            >
+              {theme.user.job}
+            </span>
+            <Paragraph>{theme.user.description}</Paragraph>
+          </Section>
 
-        <Section margin="1.5rem 0 0.5rem 0">
-          <Subtitle>🚀Main Skills</Subtitle>
-          <Skills>
-            <SiReact title="ReactJs" style={{ color: " #61DAFB" }} />
-            <SiJavascript style={{ color: "yellow" }} title="JavaScript" />
-            <SiTypescript style={{ color: "#007ACC" }} title="TypeScript" />
-            <SiStyledcomponents
-              style={{ color: " #fff" }}
-              title="Styled Components"
-            />
-            <SiNodedotjs style={{ color: "  #8CC84B " }} title="NodeJs" />
-            <SiExpress style={{ color: " #858585" }} title="Express" />
-          </Skills>
-        </Section>
+          <Section margin="1.5rem 0 0.5rem 0">
+            {/* <Subtitle fontSize="1rem">main skills</Subtitle> */}
+            <Skills>
+              <SiReact title="ReactJs" style={{ color: " #61DAFB" }} />
+              <SiJavascript style={{ color: "yellow" }} title="JavaScript" />
+              <SiTypescript style={{ color: "#007ACC" }} title="TypeScript" />
+              <SiStyledcomponents
+                style={{ color: " #fff" }}
+                title="Styled Components"
+              />
+              <SiNodedotjs style={{ color: "  #8CC84B " }} title="NodeJs" />
+              <SiExpress style={{ color: " #858585" }} title="Express" />
+            </Skills>
+          </Section>
 
-        <Section margin="2rem 0 0 0">
-          <Subtitle>Meus Projetos {"</>"} </Subtitle>
-          <div style={{ margin: "2rem 0" }}>
-            {data.projects.map((project) => {
-              return (
-                <Card
-                  title={project.title}
-                  content={project.description}
-                  imageUrl={project.img}
-                  url={project.link.deploy}
-                />
-              );
-            })}
-          </div>
-        </Section>
-      </Wrapper>
+          <Section margin="2rem 0 0 0">
+            <Subtitle>Meus Projetos {"</>"} </Subtitle>
+            <div style={{ margin: "2rem 0" }}>
+              {data.projects.map((project, index) => {
+                return (
+                  <Card
+                    title={project.title}
+                    content={project.description}
+                    imageUrl={project.img}
+                    url={project.link.deploy}
+                    key={index}
+                    isOutside={true}
+                  />
+                );
+              })}
+            </div>
+          </Section>
+
+          <Section margin="2rem 0 0 0">
+            <Subtitle>Últimas do blog</Subtitle>
+            <div style={{ margin: "2rem 0" }}>
+              {data.posts.map((post, index) => {
+                return (
+                  <Card
+                    title={post.title}
+                    content={post.description}
+                    imageUrl={post.img}
+                    key={index}
+                    url={post.url}
+                    isOutside={false}
+                  />
+                );
+              })}
+            </div>
+          </Section>
+
+          <Footer />
+        </Wrapper>
+      </Container>
     </>
   );
 };

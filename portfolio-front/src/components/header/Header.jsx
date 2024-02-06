@@ -9,6 +9,7 @@ import {
   Item,
   SocialMedia,
   Fade,
+  HeaderMobile,
 } from "./Header.styles";
 
 import theme from "../../theme/theme";
@@ -19,7 +20,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import imageProfile from "../../assets/img-profile-example.jpg";
+import { Wrapper } from "../Wrapper/Wrapper";
+import { data } from "../../data/data";
 
 export const Header = () => {
   const [isDesktop, setIsDesktop] = useState(
@@ -61,10 +63,14 @@ export const Header = () => {
     <>
       {!isDesktop && menuVisible && <Fade />}
 
-      <RxHamburgerMenu
-        onClick={handleButtonClick}
-        style={{ fontSize: "2rem", cursor: "pointer" }}
-      />
+      <Wrapper>
+        {!isDesktop && (
+          <HeaderMobile>
+            <RxHamburgerMenu onClick={handleButtonClick} />
+            <span>Eduardo Souza</span>
+          </HeaderMobile>
+        )}
+      </Wrapper>
 
       <StyleHeader
         ref={menuRef}
@@ -72,7 +78,7 @@ export const Header = () => {
       >
         <Profile>
           <ContainerImg>
-            <img src={imageProfile} alt="User" />
+            <img src={data.user.imgProfile} alt="User" />
           </ContainerImg>
         </Profile>
 
