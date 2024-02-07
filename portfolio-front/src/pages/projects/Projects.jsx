@@ -10,9 +10,11 @@ import axios from "axios";
 
 import { useEffect, useState } from "react";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import RotateScale from "../../components/RotateScale/RotateScale.styles.jsx";
 
 export const Projects = ({ data }) => {
   const [repositories, setRepositories] = useState([]);
+  const [spinner, setSpinner] = useState(true);
 
   const {
     usernameGithub,
@@ -25,7 +27,7 @@ export const Projects = ({ data }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://api.github.com/users/${usernameGithub}/repos`
+          `https://api.github.com/userss/${usernameGithub}/repos`
         );
 
         const arrayDeObjetosOrdenado = [...response.data]
@@ -44,6 +46,7 @@ export const Projects = ({ data }) => {
           .slice(0, howManyProjects);
 
         setRepositories(arrayDeObjetosOrdenado);
+        setSpinner(false);
       } catch (error) {}
     };
 
@@ -77,6 +80,7 @@ export const Projects = ({ data }) => {
           <Subtitle>Últimos Projetos</Subtitle>
 
           <Section margin="2rem 0 4rem 0">
+            {spinner && <RotateScale />}
             <div style={{ margin: "2rem 0" }}>
               {repositories.map((repository) => {
                 return (
