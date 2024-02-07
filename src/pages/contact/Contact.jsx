@@ -5,7 +5,7 @@ import { Wrapper } from "../../components/Wrapper/Wrapper";
 import { Footer } from "../../components/Footer/Footer.jsx";
 
 import { Title } from "../../components/Title/Title.styles.jsx";
-import { Section } from "../../components/Section/Section.styles.jsx";
+import  Section  from "../../components/Section/Section.jsx";
 import { Paragraph } from "../../components/Paragraph/Paragraph.styles.jsx";
 import Card2 from "../../components/Card2/Card2.jsx";
 
@@ -39,7 +39,7 @@ export const Contact = ({
           </Paragraph>
 
           <Section
-            margin="2rem 0"
+            margin="2rem"
             style={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}
           >
             {contacts.map((contact, index) => {

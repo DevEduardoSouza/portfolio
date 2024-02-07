@@ -4,7 +4,7 @@ import { Wrapper } from "../../components/Wrapper/Wrapper";
 import { Paragraph } from "../../components/Paragraph/Paragraph.styles.jsx";
 import { Title, Subtitle } from "../../components/Title/Title.styles.jsx";
 import theme from "../../theme/theme.js";
-import { Section, Skills } from "./Home.styles.jsx";
+import { Skills } from "./Home.styles.jsx";
 import {
   SiJavascript,
   SiTypescript,
@@ -16,6 +16,8 @@ import {
 import { Card } from "../../components/Card/Card.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Container } from "../../components/Container/Container.styles.jsx";
+
+import  Section  from "../../components/Section/Section.jsx";
 
 export const Home = ({ data }) => {
   return (
@@ -39,7 +41,6 @@ export const Home = ({ data }) => {
           </Section>
 
           <Section margin="1.5rem 0 0.5rem 0">
-            {/* <Subtitle fontSize="1rem">main skills</Subtitle> */}
             <Skills>
               <SiReact title="ReactJs" style={{ color: " #61DAFB" }} />
               <SiJavascript style={{ color: "yellow" }} title="JavaScript" />
@@ -53,7 +54,7 @@ export const Home = ({ data }) => {
             </Skills>
           </Section>
 
-          <Section margin="2rem 0 0 0">
+          <Section margin="2rem">
             <Subtitle>Meus Projetos {"</>"} </Subtitle>
             <div style={{ margin: "2rem 0" }}>
               {data.projects.map((project, index) => {
@@ -71,7 +72,7 @@ export const Home = ({ data }) => {
             </div>
           </Section>
 
-          <Section margin="2rem 0 0 0">
+          <Section margin="2rem">
             <Subtitle>Últimas do blog</Subtitle>
             <div style={{ margin: "2rem 0" }}>
               {data.posts.map((post, index) => {
