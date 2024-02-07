@@ -95,7 +95,35 @@ export const data = {
       usernameGithub: "DevEduardoSouza",
       howManyProjects: 10,
       addProjectsWithoutDescription: false,
-      imgThumbnailDefault: "" 
+      imgThumbnailDefault: "",
     },
+    contacts: [
+      {
+        name: "e-mail",
+        icon: "envelope-at",
+        link: "mailto:eduardosouzadev.10@gmail.com",
+      }, //Email
+      { name: "whatsapp", icon: "whatsapp", link: "#" },
+      {
+        name: "instagram",
+        icon: "instagram",
+        link: "https://www.instagram.com/eduardosouza.dev/",
+      },
+      {
+        name: "github",
+        icon: "github",
+        link: "https://github.com/DevEduardoSouza",
+      },
+      {
+        name: "linkedin",
+        icon: "linkedin",
+        link: "https://www.linkedin.com/in/eduardo-souza-dev",
+      },
+      {
+        name: "discord",
+        icon: "discord",
+        link: "https://discord.gg/TZ4QA9X8D4",
+      },
+    ],
   },
 };

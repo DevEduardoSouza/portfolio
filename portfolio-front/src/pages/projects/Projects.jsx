@@ -27,7 +27,7 @@ export const Projects = ({ data }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://api.github.com/userss/${usernameGithub}/repos`
+          `https://api.github.com/users/${usernameGithub}/repos`
         );
 
         const arrayDeObjetosOrdenado = [...response.data]
