@@ -8,7 +8,8 @@ const Card2 = ({ icon, title, link }) => {
     flex: 1;
     min-width: 204px;
     height: 179px;
-    border: 1px solid #cfcfcf31;
+    border: 1px solid #d6d6d6;
+    background-color: #44444430;
     padding: 1rem;
     border-radius: 1rem;
 

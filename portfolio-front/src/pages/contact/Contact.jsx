@@ -4,12 +4,10 @@ import { Container } from "../../components/Container/Container.styles";
 import { Wrapper } from "../../components/Wrapper/Wrapper";
 import { Footer } from "../../components/Footer/Footer.jsx";
 
-import { Title, Subtitle } from "../../components/Title/Title.styles.jsx";
+import { Title } from "../../components/Title/Title.styles.jsx";
 import { Section } from "../../components/Section/Section.styles.jsx";
 import { Paragraph } from "../../components/Paragraph/Paragraph.styles.jsx";
-import { Card } from "../../components/Card/Card.jsx";
 import Card2 from "../../components/Card2/Card2.jsx";
-import Icon from "../../components/Icon/Icon.jsx";
 
 export const Contact = ({
   data: {
