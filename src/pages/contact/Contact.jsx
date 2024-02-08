@@ -5,7 +5,7 @@ import { Wrapper } from "../../components/Wrapper/Wrapper";
 import { Footer } from "../../components/Footer/Footer.jsx";
 
 import { Title } from "../../components/Title/Title.styles.jsx";
-import  Section  from "../../components/Section/Section.jsx";
+import Section from "../../components/Section/Section.jsx";
 import { Paragraph } from "../../components/Paragraph/Paragraph.styles.jsx";
 import Card2 from "../../components/Card2/Card2.jsx";
 
@@ -33,7 +33,7 @@ export const Contact = ({
             <span>
               {" " +
                 contacts
-                  .find((contact) => contact.name === "e-mail")
+                  .find((contact) => contact.name === "E-mail")
                   ?.link.replace("mailto:", "")}
             </span>
           </Paragraph>
@@ -49,6 +49,8 @@ export const Contact = ({
                   icon={contact.icon}
                   title={contact.name}
                   link={contact.link}
+                  backgroundColor={contact.backgroundColor}
+                  description={contact.description}
                 />
               );
             })}

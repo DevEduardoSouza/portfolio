@@ -99,30 +99,49 @@ export const data = {
     },
     contacts: [
       {
-        name: "e-mail",
+        name: "E-mail",
         icon: "envelope-at",
         link: "mailto:eduardosouzadev.10@gmail.com",
+        backgroundColor: "#0072C6",
+        description: "Entre em contato por e-mail para conversas diretas. 📧",
       }, //Email
-      { name: "whatsapp", icon: "whatsapp", link: "#" },
       {
-        name: "instagram",
+        name: "WhatsApp",
+        icon: "whatsapp",
+        link: "#",
+        backgroundColor: " #25D366",
+        description: "Converse via WhatsApp para comunicação instantânea. 💬",
+      },
+      {
+        name: "Instagram",
         icon: "instagram",
         link: "https://www.instagram.com/eduardosouza.dev/",
+        backgroundColor: "#833AB4",
+        description: "Siga-me no Instagram para atualizações e mais! 📸",
       },
       {
-        name: "github",
+        name: "Github",
         icon: "github",
         link: "https://github.com/DevEduardoSouza",
+        backgroundColor: "#24292e",
+        description:
+          "Visite meu perfil no GitHub para projetos e colaborações. 💻",
       },
       {
-        name: "linkedin",
+        name: "LinkedIn",
         icon: "linkedin",
         link: "https://www.linkedin.com/in/eduardo-souza-dev",
+        backgroundColor: "#0A66C2",
+        description:
+          "Conecte-se comigo no LinkedIn para networking profissional. 🔗",
       },
       {
-        name: "discord",
+        name: "Discord",
         icon: "discord",
         link: "https://discord.gg/TZ4QA9X8D4",
+        backgroundColor: "#5865F2",
+        description:
+          "Junte-se ao servidor do Discord para bate-papo em grupo e mais! 🎮",
       },
     ],
   },
