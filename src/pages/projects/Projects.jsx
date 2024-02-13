@@ -94,6 +94,7 @@ export const Projects = ({ data }) => {
                     url={repository.html_url}
                     key={repository.id}
                     isOutside={true}
+                    positionImg={"center"}
                   />
                 );
               })}

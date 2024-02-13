@@ -17,7 +17,7 @@ import { Card } from "../../components/Card/Card.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Container } from "../../components/Container/Container.styles.jsx";
 
-import  Section  from "../../components/Section/Section.jsx";
+import Section from "../../components/Section/Section.jsx";
 
 export const Home = ({ data }) => {
   return (
@@ -72,7 +72,7 @@ export const Home = ({ data }) => {
             </div>
           </Section>
 
-          <Section margin="2rem">
+          {/* <Section margin="2rem">
             <Subtitle>Últimas do blog</Subtitle>
             <div style={{ margin: "2rem 0" }}>
               {data.posts.map((post, index) => {
@@ -88,7 +88,7 @@ export const Home = ({ data }) => {
                 );
               })}
             </div>
-          </Section>
+          </Section> */}
 
           <Footer />
         </Wrapper>

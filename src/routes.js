@@ -15,7 +15,7 @@ export const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home data={data} />}></Route>
         <Route path="/projetos" element={<Projects data={data} />}></Route>
-        <Route path="/blog" element={<Blog />}></Route>
+        {/* <Route path="/blog" element={<Blog />}></Route> */}
         <Route path="/curriculo" element={<Cv />}></Route>
         <Route path="/contatos" element={<Contact data={data} />}></Route>
       </Routes>

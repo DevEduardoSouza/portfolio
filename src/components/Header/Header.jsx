@@ -90,9 +90,9 @@ export const Header = () => {
             <Item>
               <Link to={"/projetos"}>Projetos</Link>
             </Item>
-            <Item>
+            {/* <Item>
               <Link to={"/blog"}>Blog</Link>
-            </Item>
+            </Item> */}
             <Item>
               <Link to={"/curriculo"}>Currículo</Link>
             </Item>
