@@ -103,16 +103,36 @@ export const Header = () => {
         </Nav>
 
         <SocialMedia>
-          <a href={theme.socialLinks.github}>
+          <a
+            href={
+              data.user.contacts.find((contact) => contact.name === "Github")
+                ?.link
+            }
+          >
             <FaGithub />
           </a>
-          <a href={theme.socialLinks.LinkedIn}>
+          <a
+            href={
+              data.user.contacts.find((contact) => contact.name === "LinkedIn")
+                ?.link
+            }
+          >
             <FaLinkedin />
           </a>
-          <a href={theme.socialLinks.Instagram}>
+          <a
+            href={
+              data.user.contacts.find((contact) => contact.name === "Instagram")
+                ?.link
+            }
+          >
             <FaInstagram />
           </a>
-          <a href={theme.socialLinks.Discord}>
+          <a
+            href={
+              data.user.contacts.find((contact) => contact.name === "Discord")
+                ?.link
+            }
+          >
             <FaDiscord />
           </a>
         </SocialMedia>
