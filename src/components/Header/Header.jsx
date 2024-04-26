@@ -91,7 +91,7 @@ export const Header = () => {
               <Link to={"/projetos"}>Projetos</Link>
             </Item>
             {/* <Item>
-              <Link to={"/blog"}>Blog</Link>
+              <Link to={"/estudos"}>Estudos</Link>
             </Item> */}
             <Item>
               <Link to={"/curriculo"}>Currículo</Link>
