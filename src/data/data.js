@@ -32,7 +32,7 @@ export const data = {
         gitHub: "",
         deploy: "https://j0rd4n.netlify.app/",
       },
-      img: "https://lh3.googleusercontent.com/pw/AP1GczPSEnV2JVBUFpOmjeaIJKPpy6y5B5lGJqp3gsr1gH4jq-6fRt4drF-xs56TqQRzqB-o-scxFK2FEC5UWMnOFIpegKT7V_NUDGDyXXM00lbwJu4zlNwP4XkAYV9H-MUE4_IytO6KB22EyHCR2WZoVyFKvAcktMWLWPOf8aSPAhdCqELvVB72pwhj39tJMsEPiXEmLrx7BbDSP4iFWu6xUrIxw5qRlgA8OD8S-khKSzb0eVYhCpHrOZRzfA59jfPA3f_UtZssbNQTnPKDoz_IDzjMYDHwmLia_PRu2TaAWaShEciilQDZ6wqoiqLupLqyOxL3F0uDKZBEhGqSsL6lUUzFntoCESEz-yLMRHXVbifBbS2mVyS-GUSBrZ4YE_7pc6EFZaeiiz-EqJqSmFPMtaR7RJwjgQ7_uPfmFM9aYz2w1A6nAHoLbY3pfmYxJTpog5kCtwOHcQE38P45yBR8PYSWiESrFhWS_yO6vbnxcADm3OV21WwXt-Co6puwsriN7EiXXTIOGmzG5zksBqwWATVFXMBNNXkAKMzrg5Z73eb-o_q3pPmadcMMOukXjG-XvUShLzMDE26vHnJDIyOqQmhZVJDPqxQgkugc8sfR0wtrHcgtqXruvn01qtfKea7gV7HmPpIIkBoRuNcXyD1jYQEGvq6p7v6Mxfo-KUkSVvfrtUkcC1BkHMUXd5_NjrENDM6ZLpxqnUQ5A_iX0hePnvS9iOXObDgz9HEyuC9ylX9VXIoNcT2txsPaXJROcz1bhzAzE9Z0lF4gsxyFTkVl64B6-9Y4Yzm6E77xJecZIcBc5IjppjSjE1RsHrwQJXSKuN37juSwU4WSDnS6KtCbwi0205QuScjsXtATW95eRWsEm7eTu0vQaL-UVWxqhnnBd-XLmbEz_dDxNLikE6LGZsDTKh58lZyJTTjjmI_ykjupC9r7gG5sRWfxnD6KAa9XdyQQqE9NWsVFlNyEIEvuv6mFEkcTXN3Cefgby9ABfqKwu1aIWTNv4HBYoPfsyFf2Bg=w502-h599-s-no-gm?authuser=0",
+      img: "https://raw.githubusercontent.com/DevEduardoSouza/jordan-shoes/main/imgs/ft_projeto_%5B.png",
       priority: 2,
       isNew: false,
     },
