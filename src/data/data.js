@@ -36,6 +36,18 @@ export const data = {
       priority: 2,
       isNew: false,
     },
+    {
+      title: "AmazonScraper: Coletar dados na Amazon",
+      description:
+        "Este projeto une o frontend e o backend para acessar dados da Amazon de forma simplificada. Com suporte a raspagem com palavras-chave definidas pelo usuário e detalhes de produtos obtidos via web scraping, oferece uma solução completa e intuitiva.",
+      link: {
+        gitHub: "",
+        deploy: "https://github.com/DevEduardoSouza/amazon-scraper",
+      },
+      img: "https://github.com/DevEduardoSouza/amazon-scraper/blob/main/frontend/imgs/img-full-2.png?raw=true",
+      priority: 2,
+      isNew: false,
+    },
   ],
   posts: [
     {
