@@ -111,10 +111,17 @@ export const data = {
     },
     contacts: [
       {
+        name: "Telegram",
+        icon: "telegram",
+        link: "https://t.me/eduardosouzadev",
+        backgroundColor: "#0088cc",
+        description: "Converse via Telegram para comunicação instantânea. 💬",
+      },
+      {
         name: "E-mail",
         icon: "envelope-at",
         link: "mailto:eduardosouzadev.10@gmail.com",
-        backgroundColor: "#0072C6",
+        backgroundColor: "#6001D2",
         description: "Entre em contato por e-mail para conversas diretas. 📧",
       }, //Email
       {
