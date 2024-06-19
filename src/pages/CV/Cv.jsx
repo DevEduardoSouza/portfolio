@@ -6,10 +6,20 @@ import { Title } from "../../components/Title/Title.styles";
 import { Paragraph } from "../../components/Paragraph/Paragraph.styles";
 import Section from "../../components/Section/Section.jsx";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export const Cv = () => {
   return (
     <div>
+      <Helmet>
+        <title>Entre em Contato</title>
+        <meta charSet="utf-8" />
+
+        <meta
+          name="description"
+          content="Desenvolvedor ReactJS | TypeScript | HTML | CSS | JavaScript | NodeJs. Estudante de Análise e Desenvolvimento de Sistemas (ADS) no Instituto Federal da Bahia (IFBA)."
+        />
+      </Helmet>
       <Header />
       <Container>
         <Wrapper>

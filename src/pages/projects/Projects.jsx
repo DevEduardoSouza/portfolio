@@ -11,6 +11,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import RotateScale from "../../components/RotateScale/RotateScale.styles.jsx";
+import { Helmet } from "react-helmet";
 
 export const Projects = ({ data }) => {
   const [repositories, setRepositories] = useState([]);
@@ -55,6 +56,15 @@ export const Projects = ({ data }) => {
 
   return (
     <div>
+      <Helmet>
+        <title>Entre em Contato</title>
+        <meta charSet="utf-8" />
+
+        <meta
+          name="description"
+          content="Confira os projetos que desenvolvi ao longo do tempo. Veja detalhes e links para mais informações."
+        />
+      </Helmet>
       <Header />
       <Container>
         <Wrapper>

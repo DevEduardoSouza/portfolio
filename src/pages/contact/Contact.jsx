@@ -8,6 +8,7 @@ import { Title } from "../../components/Title/Title.styles.jsx";
 import Section from "../../components/Section/Section.jsx";
 import { Paragraph } from "../../components/Paragraph/Paragraph.styles.jsx";
 import Card2 from "../../components/Card2/Card2.jsx";
+import {Helmet} from "react-helmet";
 
 export const Contact = ({
   data: {
@@ -16,6 +17,12 @@ export const Contact = ({
 }) => {
   return (
     <div>
+      <Helmet>
+        <title>Entre em Contato</title>
+        <meta charSet="utf-8" />
+        <meta name="description" content="Entre em contato para oportunidades de colaboração. Conecte-se conosco agora!" />
+        {/* Outras meta tags conforme necessário */}
+      </Helmet>
       <Header />
       <Container>
         <Wrapper>
