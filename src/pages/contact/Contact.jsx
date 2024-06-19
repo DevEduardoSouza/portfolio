@@ -18,7 +18,6 @@ export const Contact = ({
   return (
     <div>
       <Helmet>
-        <title>Entre em Contato</title>
         <meta charSet="utf-8" />
         <meta name="description" content="Entre em contato para oportunidades de colaboração. Conecte-se conosco agora!" />
         {/* Outras meta tags conforme necessário */}
