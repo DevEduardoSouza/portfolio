@@ -57,7 +57,6 @@ export const Projects = ({ data }) => {
   return (
     <div>
       <Helmet>
-        <title>Entre em Contato</title>
         <meta charSet="utf-8" />
 
         <meta
